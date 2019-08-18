@@ -3,13 +3,13 @@
 
 """The setup script."""
 
-from setuptools import setup, find_packages
+from setuptools import setup
 
 with open('README.md') as readme_file:
-    readme = readme_file.read()
+    README = readme_file.read()
 
 with open('CHANGELOG.md') as changelog_file:
-    changelog = changelog_file.read()
+    CHANGELOG = changelog_file.read()
 
 setup(
     author="Damien PLENARD",
@@ -32,7 +32,7 @@ setup(
         ],
     },
     license="MIT License",
-    long_description=readme + '\n\n' + changelog,
+    long_description=README + '\n\n' + CHANGELOG,
     name='python-template',
     packages=('python_template'),
     project_urls={
