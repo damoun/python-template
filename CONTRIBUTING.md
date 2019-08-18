@@ -74,9 +74,8 @@ $ git checkout -b name-of-your-bugfix-or-feature
    tests, including testing other Python versions with tox:
 
 ```shell
-$ flake8 python_template tests
-$ python setup.py test
-$ tox
+$ flake8 python_template
+$ coverage run -m unittest discover
 ```
 
    To get flake8 and tox, just pip install them into your virtualenv.
