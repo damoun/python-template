@@ -9,7 +9,7 @@ python:
 
 # Command to install dependencies
 install:
-  - pip install pipenv
+  - pip install pipenv codecov
   - pipenv install --dev
 
 # Command to run tests, e.g. python setup.py test
@@ -32,3 +32,6 @@ script:
 #     tags: true
 #     repo: damoun/python-template
 #     python: 3.6
+
+after_success:
+  - codecov
