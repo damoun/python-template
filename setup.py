@@ -11,12 +11,6 @@ with open('README.md') as readme_file:
 with open('CHANGELOG.md') as changelog_file:
     changelog = changelog_file.read()
 
-requirements = ['Click>=7.0']
-
-setup_requirements = []
-
-test_requirements = []
-
 setup(
     author="Damien PLENARD",
     author_email='damien@plenard.me',
@@ -37,16 +31,13 @@ setup(
             'python-template=python_template.cli:main',
         ],
     },
-    install_requires=requirements,
     license="MIT License",
     long_description=readme + '\n\n' + changelog,
     include_package_data=True,
     keywords='icrawlerbot',
     name='icrawlerbot',
     packages=find_packages(include=['python_template']),
-    setup_requires=setup_requirements,
     test_suite='tests',
-    tests_require=test_requirements,
     url='https://github.com/damoun/python-template',
     version="0.0.1",
     zip_safe=False,
