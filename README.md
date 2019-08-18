@@ -26,7 +26,7 @@
 </p>
 
 <p align="center">
-  <a href="#instaling">Installing</a> •
+  <a href="#installing">Installing</a> •
   <a href="#getting-started">Getting Started</a> •
   <a href="#contributing">Contributing</a> •
   <a href="CHANGELOG.md">Changelog</a>
