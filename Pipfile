@@ -9,5 +9,8 @@ click = "*"
 
 [dev-packages]
 twine = "*"
-flake8 = "*"
+pylama = "*"
+pylint = "*"
+mccabe = "*"
+pyflakes = "*"
 coverage = "*"
