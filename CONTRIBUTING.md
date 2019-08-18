@@ -74,7 +74,7 @@ $ git checkout -b name-of-your-bugfix-or-feature
    tests, including testing other Python versions with tox:
 
 ```shell
-$ flake8 python_template
+$ pylama
 $ coverage run -m unittest discover
 ```
 
@@ -107,7 +107,7 @@ Before you submit a pull request, check that it meets these guidelines:
 To run a subset of tests:
 
 ```shell
-$ python setup.py test
+$ python -m unittest discover
 ```
 
 ## Deploying
@@ -116,8 +116,10 @@ A reminder for the maintainers on how to deploy.
 Make sure all your changes are committed (including an entry in CHANGELOG.md).
 Then run:
 
+```shell
 $ bumpversion patch # possible: major / minor / patch
 $ git push
 $ git push --tags
+```
 
 Travis will then deploy to PyPI if tests pass.
