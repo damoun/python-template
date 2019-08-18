@@ -7,8 +7,8 @@ import click
 
 
 @click.command()
-def main(token):
-    """Console script for icrawlerbot."""
+def main():
+    """Console script for python_template."""
     print('Hello World')
     return 0
 

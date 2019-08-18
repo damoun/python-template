@@ -33,12 +33,12 @@ setup(
     },
     license="MIT License",
     long_description=readme + '\n\n' + changelog,
-    include_package_data=True,
-    keywords='icrawlerbot',
-    name='icrawlerbot',
-    packages=find_packages(include=['python_template']),
-    test_suite='tests',
-    url='https://github.com/damoun/python-template',
-    version="0.0.1",
-    zip_safe=False,
+    name='python-template',
+    packages=('python_template'),
+    project_urls={
+        'Maintainer': 'https://github.com/damoun',
+        'Source': 'https://github.com/damoun/python-template',
+        'Tracker': 'https://github.com/damoun/python-template/issues'
+    },
+    version="0.0.1"
 )
