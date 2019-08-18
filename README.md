@@ -60,4 +60,4 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
 
 > You can find more information about Pull Requests [here](https://help.github.com/categories/collaborating-on-projects-using-pull-requests/)
 
-Check also the [list of contributors](CONTRIBUTORS.md) who helped on this project.
+Check also the [list of contributors](AUTHOR.md#contributors) who helped on this project.
