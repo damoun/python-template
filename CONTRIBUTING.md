@@ -59,9 +59,7 @@ $ git clone git@github.com:your_name_here/python-template.git
 3. Install your local copy into a virtualenv. Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development:
 
 ```shell
-$ mkvirtualenv python-template
-$ cd python-template/
-$ python setup.py develop
+$ pipenv install --dev
 ```
 
 4. Create a branch for local development:
@@ -76,8 +74,8 @@ $ git checkout -b name-of-your-bugfix-or-feature
    tests, including testing other Python versions with tox:
 
 ```shell
-$ flake8 icrawlerbot tests
-$ python setup.py test or py.test
+$ flake8 python_template tests
+$ python setup.py test
 $ tox
 ```
 
@@ -110,7 +108,7 @@ Before you submit a pull request, check that it meets these guidelines:
 To run a subset of tests:
 
 ```shell
-$ pytest
+$ python setup.py test
 ```
 
 ## Deploying

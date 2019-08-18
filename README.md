@@ -38,7 +38,7 @@
 
 ```sh
 # Describe it in a nice way. Code samples with installation basics works great
-$ pip install -e .
+$ pipenv install --dev
 $ python-template
 ```
 
